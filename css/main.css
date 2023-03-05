@@ -1,0 +1,243 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu__toggle--close:hover,
+.menu__toggle--close:focus {
+  fill: var(--activ-color);
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.header__logo--mobilemenu {
+  margin-bottom: 55px;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  list-style: none;
+}
+@media screen and (min-height: 570px) {
+  .mobile-menu {
+    margin-bottom: auto;
+  }
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.mobile-menu__link {
+  display: block;
+  line-height: 1.45;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+  color: var(--main-color);
+}
+@media screen and (min-width: 380px) and (min-height: 380px) {
+  .mobile-menu__link {
+    font-size: 40px;
+  }
+}
+.mobile-menu__link:focus, .mobile-menu__link:hover {
+  color: var(--activ-color);
+}
+
+.mobile-contacts__list {
+  margin-bottom: 64px;
+}
+
+.mobile-conacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.discussion {
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.discussion__conacts--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 31px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.discussion__icon {
+  margin-right: 7px;
+}
+
+.discussion__conacts--phone {
+  font-size: 25px;
+  line-height: 1.18;
+  color: var(--activ-color);
+}
+@media screen and (min-width: 380px) and (min-height: 380px) {
+  .discussion__conacts--phone {
+    font-size: 34px;
+  }
+}
+
+.mobile-mail {
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--secondary-color);
+}
+@media screen and (min-width: 380px) and (min-height: 380px) {
+  .mobile-mail {
+    font-size: 24px;
+  }
+}
+
+.mobile-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-socials__item {
+  padding-right: 10px;
+}
+.mobile-socials__item:not(:first-child) {
+  padding-left: 10px;
+}
+.mobile-socials__item:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--activ-color);
+  text-decoration: none;
+}
+@media screen and (min-width: 380px) and (min-height: 380px) {
+  .mobile-socials__link {
+    font-size: 18px;
+  }
+}
+
+.discussion__button {
+  width: 260px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #ae7b3c;
+  -webkit-box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */
